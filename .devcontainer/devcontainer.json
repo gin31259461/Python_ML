@@ -1,0 +1,32 @@
+{
+	"name": "Python ML dev container",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"forwardPorts": [],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"shardulm94.trailing-spaces",
+				"Gruntfuggly.todo-tree",
+				"rangav.vscode-thunder-client",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"DavidAnson.vscode-markdownlint",
+				"shd101wyy.markdown-preview-enhanced",
+				"ms-toolsai.jupyter",
+				"streetsidesoftware.code-spell-checker",
+				"eamodio.gitlens",
+				"mhutchie.git-graph",
+				"ms-python.flake8",
+				"ms-python.isort",
+				"ms-python.black-formatter",
+				"joaompinto.vscode-graphviz",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"TabNine.tabnine-vscode"
+			]
+		}
+	},
+	"remoteUser": "root"
+}
