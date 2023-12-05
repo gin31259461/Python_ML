@@ -13,5 +13,9 @@
     "scipy",
     "xaxis",
     "yaxis"
-  ]
+  ],
+  "a-file-icon-vscode.activeIconPacks": [
+    "react"
+  ],
+  "a-file-icon-vscode.arrowTheme": "material"
 }

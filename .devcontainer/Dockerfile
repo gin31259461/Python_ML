@@ -22,5 +22,5 @@ RUN curl -sSL https://repo.anaconda.com/archive/Anaconda3-$ANACONDA_VERSION-Linu
     && rm /tmp/anaconda.sh
 ENV PATH=$ANACONDA_DIR/bin:$PATH
 
-RUN conda install -y keras \
+RUN conda install -y tensorflow \
     && conda install -y seaborn
