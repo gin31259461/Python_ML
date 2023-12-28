@@ -48,3 +48,39 @@ def clean_age(a: str):
     elif "year" in unit:
         age *= 12
     return age
+
+
+# converts a multi-class np.array into a list of dicts with one-hot encoded features
+def array_to_dict(class_arr: np.array):
+    result = list()
+    for row in class_arr:
+        # create a dictionary for each row
+        feats = dict()
+        for c in row:
+            # assumes feature value is either a string or np.nan
+            # np.nan can't be used on strings so using alternative method to detect np.nan
+            if isinstance(c, str):
+                feats[c] = 1
+        result.append(feats)
+    return result
+
+
+def clean_normalized_sex(s: str):
+    if s == "unknown":
+        return "/".join(["0.5", "0.5"])
+
+    neutered = np.nan
+    sex = np.nan
+    s1, s2 = s.split("_")
+
+    if s1 == "intact":
+        neutered = "0"
+    elif s1 == "neutered" or s1 == "spayed":
+        neutered = "1"
+
+    if s2 == "female":
+        sex = "0"
+    elif s2 == "male":
+        sex = "1"
+
+    return "/".join([neutered, sex])

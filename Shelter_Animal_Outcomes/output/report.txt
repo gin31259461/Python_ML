@@ -1,0 +1,22 @@
+1 : -0.7342839577072033
+add more feature
+hyperparameter tuning
+normal label encoding
+
+2 : -0.734628152531852
+add more feature
+hyperparameter tuning
+one hot encoding
+
+3 : -0.7299647348545446
+add more feature
+hyperparameter tuning
+one hot encoding
+split SexuponOutcome => Neutered, Sex
+
+4 : -0.7298496909140911
+add more feature
+hyperparameter tuning
+one hot encoding
+split SexuponOutcome => Neutered, Sex
+replace rare breed and color with rare string
