@@ -11,6 +11,7 @@
     "ndimage",
     "openml",
     "scipy",
+    "Sexupon",
     "xaxis",
     "yaxis"
   ],

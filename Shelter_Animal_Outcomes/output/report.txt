@@ -19,4 +19,5 @@ add more feature
 hyperparameter tuning
 one hot encoding
 split SexuponOutcome => Neutered, Sex
-replace rare breed and color with rare string
+replace rare breed and color with rare label
+
